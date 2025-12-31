@@ -46,10 +46,49 @@ select::-ms-expand{ display:none; }
 p{ word-break: keep-all; }
 
 @media screen and (max-width: 1250px) { 
-    .inner{ width:100%; padding:0 10px; }
+    .inner{ width:100%; padding:0 3vw; }
 } /* tablet */
 @media screen and (max-width: 650px) { 
     .paging_box{ font-size: 13px; }
 } /* mobile */
+
+
+/* header */
+header{ position: fixed; left: 0; top: 0; width: 100%; z-index: 999; background-color: #efefef; padding: 25px 0; }
+header .inner{ display: flex; align-items: center; justify-content: space-between; }
+header .menu-btn{ display: none; }
+header .meu-list{ font-weight: 500; font-size: 18px; display: flex; align-items: center; gap: 50px; }
+
+@media screen and (max-width: 1250px) {
+    header .meu-list{ font-size: 16px; }
+}
+@media screen and (max-width: 950px) { 
+    header .logo{ width: 230px; }
+    header .meu-list{ display: none; }
+    header .menu-btn{ display: block; border: none; background: transparent; }
+    header .menu-btn .icon{ width: 30px; }
+}
+@media screen and (max-width: 650px) { 
+    header .logo{ width: 200px; }
+    header{ padding: 15px 0; }
+}
+
+
+/* .slide-menu */
+.slide-menu{ display: none; }
+.close-bg{ display: none; }
+@media screen and (max-width: 950px) { 
+    .slide-menu{ transition: right .5s; display: block; padding: 15px 0; position: fixed; right: -300px; top: 0; width: 300px; height: 100%; max-width: 90%; background-color: #fff; z-index: 9999; }
+    .slide-menu.show{ right: 0; }
+    .slide-menu .btn-div{ padding: 0 10px; display: flex; justify-content: flex-end; }
+    .slide-menu .btn-div .close-btn{ background: transparent; border: none; }
+    .slide-menu .btn-div .close-btn .icon{ width: 25px; }
+    .slide-menu .menu-list{ margin-top: 30px; border-top: 1px solid #efefef; }
+    .slide-menu .menu-list > li{ border-bottom: 1px solid #efefef; }
+    .slide-menu .menu-list .item{ color: #656565; display: block; padding: 15px 3vw; font-size: 18px; font-weight: 500; }
+
+    .close-bg{ opacity: 0; visibility: hidden; display: block; cursor: pointer; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.4); z-index: 999; }
+    .close-bg.show{ opacity: 1; visibility: visible; }
+}
 
 
