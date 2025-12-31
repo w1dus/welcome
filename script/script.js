@@ -4,9 +4,18 @@ document.addEventListener("DOMContentLoaded", function(e){
 
   //## 우측 메뉴 슬라이드 ##
   slideMenu()
-
+  index_section2_slide();
 })
 
+
+const index_section2_slide= () => {
+  var swiper = new Swiper(".main .section2 .mySwiper", {
+    loop : true, 
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+}
 
 const slideMenu = () => {
   $('header .menu-btn').click(function(){
