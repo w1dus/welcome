@@ -1,6 +1,45 @@
 @charset "utf-8";
 /* animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; */
 
+.main .main-visual h2{ opacity: 0; }
+.main .main-visual.on h2{ animation: fadeInLeft 0.5s ease-in-out 0s 1 forwards running; }  
+
+.main .main-visual .title h3{ opacity: 0; }
+.main .main-visual.on .title h3{ animation: fadeInLeft 0.5s ease-in-out 0.1s 1 forwards running; }  
+
+.main .main-visual .bank{ opacity: 0; }
+.main .main-visual.on .bank{ animation: fadeInRight 0.5s ease-in-out 0s 1 forwards running; }  
+
+.main .text-deco{ opacity: 0; }
+.main .on .text-deco{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }  
+
+.main .section2 .number-box{ opacity: 0; }
+.main .section2.on .number-box{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }  
+
+.main .section2 .btn-box{ opacity: 0; }
+.main .section2.on .btn-box{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }  
+
+.main .section2 .bg-img1{ opacity: 0; }
+.main .section2.on .bg-img1{ animation: fadeInRight 0.5s ease-in-out 0.1s 1 forwards running; }
+
+.sub .sub-sec1 .icon{ opacity: 0; }
+.sub .sub-sec1.on .icon{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.sub .sub-sec1 h2{ opacity: 0; }
+.sub .sub-sec1.on h2{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+.sub .sub-sec1 h3{ opacity: 0; }
+.sub .sub-sec1.on h3{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }
+.sub .sub-sec1 .half-box{ opacity: 0; }
+.sub .sub-sec1.on .half-box{ animation: fadeIn 0.5s ease-in-out 0.3s 1 forwards running; }
+
+.sub .sub-sec2 .half-item-div{ opacity: 0; }
+.sub .sub-sec2.on .half-item-div{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.sub .sub-sec2 .item-four{ opacity: 0; }
+.sub .sub-sec2.on .item-four{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+.sub .sub-sec2 .content-div{ opacity: 0; }
+.sub .sub-sec2.on .content-div{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }
+
+.apply-section .inner{ opacity: 0; }
+.apply-section.on .inner{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
 
 @keyframes fadeIn {
     0% {transform: translate3d(0px, 30px, 0px); }

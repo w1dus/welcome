@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", function(e){
 const index_section2_slide= () => {
   var swiper = new Swiper(".main .section2 .mySwiper", {
     loop : true, 
+    effect: "fade",
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
     },
