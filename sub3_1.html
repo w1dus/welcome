@@ -71,7 +71,7 @@
                     <main class="main sec_top sub sub3_1">
                         <section class="sub-sec1 ani">
                             <div class="inner">
-                                <img src="./img/sub/sub3_1/sub03-sec1-main.png" alt="웰컴자동차담보대출" class="icon" />
+                                <img src="./img/main/section3/sub03-sec1-main.png" alt="웰컴자동차담보대출" class="icon" />
                                 <h2>햇살론</h2>
                                 <h3>소득이 적어도 정부지원으로 DSR 상관없이!</h3>
                                 <div class="half-box">
@@ -190,7 +190,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="apply-section ani">
+                        <section class="apply-section ani" id="apply">
                             <img src="./img/main/section3/sec3-bg.png" alt="background deco" class="bg-deco" />
                             <div class="inner">
                                 <div class="logo-box">
@@ -204,13 +204,13 @@
                                         <li class="half">
                                             <div class="label">이름 <span class="red">*</span></div>
                                             <div class="iptBox">
-                                                <input type="text" class="ipt" placeholder="이름을 입력해주세요." />
+                                                <input type="text" id="name" class="ipt" placeholder="이름을 입력해주세요." />
                                             </div>
                                         </li>
                                         <li class="half">
                                             <div class="label">연락처 <span class="red">*</span></div>
                                             <div class="iptBox">
-                                                <input type="text" class="ipt" placeholder="연락처를 입력해주세요." />
+                                                <input type="text" id="phone" class="ipt" placeholder="연락처를 입력해주세요." />
                                             </div>
                                         </li>
                                         <li class="full">
@@ -279,12 +279,12 @@
                                             <div class="iptBox">
                                                 <div class="label-wrap">
                                                     <label>
-                                                        <input type="radio" name="r4" value="소유" />
-                                                        <div class="text">소유</div>
+                                                        <input type="radio" name="r4" value="사용" />
+                                                        <div class="text">사용</div>
                                                     </label>
                                                     <label>
-                                                        <input type="radio" name="r4" value="미소유" />
-                                                        <div class="text">미소유</div>
+                                                        <input type="radio" name="r4" value="미사용" />
+                                                        <div class="text">미사용</div>
                                                     </label>
                                                 </div>
                                             </div>
@@ -364,10 +364,10 @@
         </main>
 
         <!-- 좌측 하단 문의 연락처 { -->
-         <a href="tel:1811-2251" class="floating-call">
+        <a href="./sub3_1.html#apply" class="floating-call scroll_move">
             <img src="./img/footer/apply-btn.svg" alt="대출상담신청" class="icon" />
             <span class="text">대출상담신청</span>
-         </a>
+        </a>
         <!-- } -->
 
         <!--개인정보처리방침-->

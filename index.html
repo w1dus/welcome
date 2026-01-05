@@ -176,7 +176,7 @@
                                                     <h3>
                                                         <span class="red">사잇돌2 </span>
                                                     </h3>
-                                                    <h2>소득이 적어도 정부지원으로 DSR 상관없이!</h2>
+                                                    <h2>저신용자도 가능한 중금리대출</h2>
                                                 </div>
                                                 <div class="number-box">
                                                     <div class="box">
@@ -200,7 +200,7 @@
                             </div>
                             
                         </section>
-                        <section class="apply-section ani">
+                        <section class="apply-section ani" id="apply">
                             <img src="./img/main/section3/sec3-bg.png" alt="background deco" class="bg-deco" />
                             <div class="inner">
                                 <div class="logo-box">
@@ -214,13 +214,13 @@
                                         <li class="half">
                                             <div class="label">이름 <span class="red">*</span></div>
                                             <div class="iptBox">
-                                                <input type="text" class="ipt" placeholder="이름을 입력해주세요." />
+                                                <input type="text" id="name" class="ipt" placeholder="이름을 입력해주세요." />
                                             </div>
                                         </li>
                                         <li class="half">
                                             <div class="label">연락처 <span class="red">*</span></div>
                                             <div class="iptBox">
-                                                <input type="text" class="ipt" placeholder="연락처를 입력해주세요." />
+                                                <input type="text" id="phone" class="ipt" placeholder="연락처를 입력해주세요." />
                                             </div>
                                         </li>
                                         <li class="full">
@@ -289,12 +289,12 @@
                                             <div class="iptBox">
                                                 <div class="label-wrap">
                                                     <label>
-                                                        <input type="radio" name="r4" value="소유" />
-                                                        <div class="text">소유</div>
+                                                        <input type="radio" name="r4" value="사용" />
+                                                        <div class="text">사용</div>
                                                     </label>
                                                     <label>
-                                                        <input type="radio" name="r4" value="미소유" />
-                                                        <div class="text">미소유</div>
+                                                        <input type="radio" name="r4" value="미사용" />
+                                                        <div class="text">미사용</div>
                                                     </label>
                                                 </div>
                                             </div>
@@ -374,7 +374,7 @@
         </main>
 
         <!-- 좌측 하단 문의 연락처 { -->
-         <a href="tel:1811-2251" class="floating-call">
+         <a href="index.html#apply" class="scroll_move floating-call">
             <img src="./img/footer/apply-btn.svg" alt="대출상담신청" class="icon" />
             <span class="text">대출상담신청</span>
          </a>
