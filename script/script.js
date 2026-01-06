@@ -7,17 +7,45 @@ document.addEventListener("DOMContentLoaded", function(e){
   index_section2_slide();
   scroll_move();
   applyform();
+
+
+
 })
 
 const applyform = () => {
-  const input = document.getElementById('name');
-
+  // const input = document.getElementById('name');
   // 포커스 빠질 때만 정리
-  input.addEventListener('blur', () => {
-    input.value = input.value
-      .replace(/[^가-힣]/g, '') // 한글만
-      .slice(0, 7);            // 7글자 제한
-  });
+  // input.addEventListener('blur', () => {
+  //   input.value = input.value
+  //     .replace(/[^가-힣]/g, '') // 한글만
+  //     .slice(0, 7);            // 7글자 제한
+  // });
+
+  
+  const MAX_LEN = 8;
+let isComposing = false;
+
+const name = document.getElementById('name');
+
+name.addEventListener('compositionstart', () => {
+  isComposing = true;
+});
+
+name.addEventListener('compositionend', () => {
+  isComposing = false;
+  sanitize();
+});
+
+name.addEventListener('input', () => {
+  if (isComposing) return;
+  sanitize();
+});
+
+function sanitize() {
+  name.value = name.value
+    .replace(/[^가-힣]/g, '')
+    .slice(0, MAX_LEN);
+}
 
   // 휴대폰 (그대로 👍)
   $('#phone').on('input', function () {
