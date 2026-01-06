@@ -16,7 +16,7 @@ const applyform = () => {
   input.addEventListener('blur', () => {
     input.value = input.value
       .replace(/[^가-힣]/g, '') // 한글만
-      .slice(0, 5);            // 5글자 제한
+      .slice(0, 7);            // 7글자 제한
   });
 
   // 휴대폰 (그대로 👍)
