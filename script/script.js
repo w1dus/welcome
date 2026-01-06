@@ -10,42 +10,29 @@ document.addEventListener("DOMContentLoaded", function(e){
 })
 
 const applyform = () => {
-   // 이름: 한글만, 최대 7자
-   $('#name').on('input', function (e) {
-    // 한글 조합 중이면 return
-    if (e.originalEvent && e.originalEvent.isComposing) return;
+  const input = document.getElementById('name');
 
-    let value = $(this).val();
-
-    // 한글만 허용
-    value = value.replace(/[^가-힣]/g, '');
-
-    // 최대 7자
-    value = value.substring(0, 7);
-
-    $(this).val(value);
+  // 포커스 빠질 때만 정리
+  input.addEventListener('blur', () => {
+    input.value = input.value
+      .replace(/[^가-힣]/g, '') // 한글만
+      .slice(0, 5);            // 5글자 제한
   });
 
-
-  // 연락처: 숫자만, 3-4-4 자동 하이픈
+  // 휴대폰 (그대로 👍)
   $('#phone').on('input', function () {
-    let value = $(this).val().replace(/[^0-9]/g, '');
+    let value = $(this).val().replace(/[^0-9]/g, '').slice(0, 11);
 
-    if (value.length > 11) {
-      value = value.substring(0, 11);
-    }
-
-    if (value.length <= 3) {
-      value = value;
-    } else if (value.length <= 7) {
-      value = value.replace(/(\d{3})(\d+)/, '$1-$2');
-    } else {
+    if (value.length > 7) {
       value = value.replace(/(\d{3})(\d{4})(\d+)/, '$1-$2-$3');
+    } else if (value.length > 3) {
+      value = value.replace(/(\d{3})(\d+)/, '$1-$2');
     }
 
     $(this).val(value);
   });
-}
+};
+
 
 const scroll_move = () => {
   $(".scroll_move").click(function(e){  
