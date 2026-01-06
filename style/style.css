@@ -258,7 +258,7 @@ footer .info-p{ margin-top: 10px; font-size: 16px; }
 footer .info-p b{ font-weight: 500; }
 footer .call-div{ margin-top: 30px; }
 footer .call-div a{ font-size: 20px; font-weight: 500; color: #E10317; display: flex; align-items: center; gap: 4px;  }
-
+footer a{ word-break: break-all; }
 @media screen and (max-width: 650px){
     footer{ padding: 20px 0 80px 0; }
 }
