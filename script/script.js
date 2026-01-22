@@ -12,6 +12,13 @@ document.addEventListener("DOMContentLoaded", function(e){
 
 })
 
+const lightbox = () => {
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
+  })
+}
+
 const applyform = () => {
   // const input = document.getElementById('name');
   // 포커스 빠질 때만 정리

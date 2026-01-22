@@ -281,7 +281,7 @@ input[type="file"].ipt label input[type="checkbox"]{ display: none;  }
 .privacyPopup .contentWrap .titleBox span{ font-weight: 600; font-size: 24px;  }
 .privacyPopup .contentWrap .titleBox .closeBtn{ cursor: pointer;  }
 
-.privacyPopup .contentWrap .contentBox{ margin-top: 30px; background-color: #F7F7F7; padding: 30px; max-height: 60vh; overflow-y: scroll; }
+.privacyPopup .contentWrap .contentBox{ line-height: 1.5em; margin-top: 30px; background-color: #F7F7F7; padding: 30px; max-height: 60vh; overflow-y: scroll; }
 
 @media screen and (max-width: 650px) {
 	.privacyPopup .contentWrap{ padding: 30px 20px; }
